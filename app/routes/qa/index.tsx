@@ -1,6 +1,6 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import FaqItem from "~/Faq";
+import { FaqItem } from "~/components/Faq";
 
 export async function loader() {
 	// fake time to load data
@@ -13,27 +13,15 @@ export async function loader() {
 				},
 				{
 					title: "Hva er Remix.run?",
-					answer: "Remix.run er en ramme for å bygge raske, moderne og skalerbare nettapplikasjoner ved hjelp av React og server-side rendering.",
+					answer: "Remix.run er en rammeverk for å bygge raske, moderne og skalerbare nettapplikasjoner ved hjelp av React og server-side rendering.",
 				},
 				{
 					title: "Hva er forskjellen mellom React og Remix.run?",
-					answer: "React er et JavaScript-bibliotek, mens Remix.run er en rammeverk bygget på toppen av React. Remix.run gir flere funksjoner som server-side rendering, statisk generering, og mer.",
-				},
-				{
-					title: "Hvordan installere React?",
-					answer: "Du kan installere React ved hjelp av npm eller yarn pakkehåndteringsverktøy.",
+					answer: "React er et JavaScript-bibliotek, mens Remix.run er en rammeverk bygget på toppen av React.",
 				},
 				{
 					title: "Hva er server-side rendering i Remix.run?",
 					answer: "Server-side rendering betyr at innholdet til en nettside blir generert på serveren og sendes til nettleseren. Dette gjør at nettsiden kan lastes raskere og gi bedre ytelse.",
-				},
-				{
-					title: "Hva er statisk generering i Remix.run?",
-					answer: "Statisk generering betyr at en nettside blir generert på forhånd og lagret som HTML-filer. Dette kan gi raskere innlastning av nettsiden og en bedre brukeropplevelse.",
-				},
-				{
-					title: "Kan jeg bruke Redux med Remix.run?",
-					answer: "Ja, du kan bruke Redux med Remix.run. Redux kan brukes til å håndtere tilstand i Redux Store og Redux Thunk kan brukes til å håndtere asynkron logikk.",
 				},
 				{
 					title: "Hva er forskjellen mellom useEffect og useLayoutEffect i React?",
