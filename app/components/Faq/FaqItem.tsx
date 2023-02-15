@@ -14,7 +14,7 @@ export function FaqItem(props: {
 	}
 
 	return (
-		<div className="w-full max-w-2xl">
+		<div className="w-full">
 			<FaqExpandBtn
 				onToggle={toggleExpanded}
 				title={props.title}
