@@ -9,7 +9,7 @@ export default function Index() {
           to="/qa"
           className="text-blue-500 hover:text-blue-600 hover:underline text-2xl"
         >
-          Gå till FAQ
+          Gå til FAQ
         </Link>
       </div>
     </div>
