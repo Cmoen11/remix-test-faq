@@ -8,7 +8,7 @@ export function FaqExpandBtn(props: {
 			onClick={props.onToggle}
 			aria-expanded={props.expanded}
 			aria-label={props.title}
-			className="w-full flex justify-between p-4 bg-gray-100 rounded-md shadow-md mt-2 mb-0 ease-in-out relative z-10 text-left"
+			className="w-full flex justify-between p-4 bg-gray-100 rounded-md shadow-md mt-2 mb-0 ease-in-out relative z-10 text-left hover:bg-gray-200 "
 		>
 			<span className="text-lg font-medium">{props.title}</span>
 			<div>
